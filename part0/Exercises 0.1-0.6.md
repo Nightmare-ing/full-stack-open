@@ -8,7 +8,7 @@ sequenceDiagram
     browser-->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
     activate server
     server-->>browser: Status code 302, redirect to /notes
-    Note URL redirect, asks the browser to perform a new HTTP GET request, so the browser reloads the Notes page
+    Note right of browser: URL redirect, asks the browser to perform a new HTTP GET request, so the browser reloads the Notes page
 
     browser-->>server: GET https://fullstack-exampleapp.herokuapp.com/notes
     server-->>browser: HTML document
